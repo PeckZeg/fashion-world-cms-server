@@ -2,8 +2,8 @@
 
 # dependencies
 /node_modules
-/proxy.json
-src/**/*.css
+/repo-path.conf
+/api-server.conf
 
 # testing
 /coverage

@@ -9,8 +9,10 @@ const Koa = require('koa');
 
 const app = new Koa();
 
+const { FW_API_SERVER = 'http://localhost:3003' } = process.env;
+
 app.use(proxy({
-  host: 'http://localhost:3003',
+  host: FW_API_SERVER,
   match: /^\/api(?:\/)?/
 }));
 
